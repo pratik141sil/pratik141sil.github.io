@@ -13,13 +13,13 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;'>
 
 
-            <a-entity geometry="primitive: box" position="0 0 0" 
-                material="color: #4CC3D9"
+            <a-box position="0 0 0" 
+                color= '#4CC3D9'
                 event-set__mouseenter="material.color: #EF2D5E"
-                event-set__mouseleave="material.color: #4CC3D9" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-entity>
+                event-set__mouseleave="material.color: #4CC3D9" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-box>
             
         <a-marker type='barcode' value='188'>
-            <a-sphere position='0 1 0' color="green"></a-sphere>
+            <a-sphere position='0 1 0' color="blue"></a-sphere>
         </a-marker>
 
         <a-marker id="animated-marker" type='barcode' value='297'>
