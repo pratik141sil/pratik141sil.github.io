@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-webxr-polyfill/dist/aframe-webxr-polyfill.js"></script>
-  <title>2Interactive XR Web App1</title>
+  <title>3Interactive XR Web App1</title>
 </head>
 <body>
     <a-scene background="color: #ECECEC">
       <!-- A-Frame entities go here -->
 
-            <!-- Camera component to show the camera input -->
-            <a-entity camera look-controls>
+           
       
             <a-entity geometry="primitive: box" position="0 1.6 -5" 
                 material="color: #4CC3D9"
@@ -20,7 +19,7 @@
                 event-set__mouseleave="material.color: #4CC3D9" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"></a-entity>
               <a-entity id="controller" hand-controls="left" ></a-entity>
               <a-entity id="controller" hand-controls="right"></a-entity>
-              </a-entity>
+              
 
             
             <script>
